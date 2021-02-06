@@ -56,9 +56,7 @@ resource "incapsula_policy" "dynamic_ip_block" {
         [
             {
                 data = {
-                    ip = {
-                        ips = var.ips
-                    }
+                    ips = var.ips
                 }
                 policySettingType = "IP"
                 settingsAction    = "BLOCK"
